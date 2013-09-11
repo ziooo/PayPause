@@ -10,10 +10,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="PayPause" android:name="com.ziooo.paypause.AddProfil">
-        </activity>
-        <activity android:label="PayPause" android:name="com.ziooo.paypause.Rapide">
-        </activity>
     </application>
 
 </manifest>

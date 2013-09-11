@@ -22,14 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.ziooo.paypause.AddProfil"
-            android:label="PayPause">
-        </activity>
-        <activity
-            android:name="com.ziooo.paypause.Rapide"
-            android:label="PayPause">
-        </activity>
     </application>
 
 </manifest>

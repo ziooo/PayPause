@@ -3,5 +3,6 @@
 
     <string name="app_name">PayPause</string>
     <string name="action_settings">Settings</string>
-    <string name="rapide">Mode Rapide</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>
