@@ -2,40 +2,25 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res" >
+        <source path="/home/kevin/ziooo/PayPause/PayPause/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="main"
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/menu/main.xml"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/menu/main.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                name="ic_launcher"
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/drawable-mdpi/ic_launcher.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_launcher"
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/drawable-hdpi/ic_launcher.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_launcher"
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/drawable-xxhdpi/ic_launcher.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/values-sw720dp-land/dimens.xml"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/values-sw720dp-land/dimens.xml"
                 qualifiers="sw720dp-land" >
                 <dimen name="activity_horizontal_margin" >128dp
                 </dimen>
             </file>
             <file
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/values-v11/styles.xml"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -46,7 +31,27 @@
                 </style>
             </file>
             <file
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/values-v14/styles.xml"
+                name="activity_main"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_launcher"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/values-v14/styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -57,7 +62,7 @@
                 </style>
             </file>
             <file
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/values/strings.xml"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="action_settings" >Settings
                 </string>
@@ -67,7 +72,7 @@
                 </string>
             </file>
             <file
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/values/styles.xml"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -89,23 +94,18 @@
                 </style>
             </file>
             <file
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/values/dimens.xml"
+                path="/home/kevin/ziooo/PayPause/PayPause/src/main/res/values/dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
                 <dimen name="activity_vertical_margin" >16dp
                 </dimen>
             </file>
-            <file
-                name="activity_main"
-                path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/main/res/layout/activity_main.xml"
-                qualifiers=""
-                type="layout" />
         </source>
-        <source path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/build/res/rs/debug" />
+        <source path="/home/kevin/ziooo/PayPause/PayPause/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/mbelhadj/ziooo/PayPauseProject/PayPause/src/debug/res" />
+        <source path="/home/kevin/ziooo/PayPause/PayPause/src/debug/res" />
     </dataSet>
 
 </merger>
