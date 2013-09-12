@@ -5,4 +5,12 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
+
+    <!-- Main activity -->
+    <string name="youWin">Vous avez gagné</string>
+    <string name="euro">€</string>
+    <string name="salaire">Salaire</string>
+    <string name="startChrono">Start</string>
+    <string name="stopChrono">Stop</string>
+
 </resources>

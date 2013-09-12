@@ -45,10 +45,10 @@ public class MainActivity extends Activity {
                 // Calcul par heure
                 if (!"".equals(salaire.getText())) {
 
-                    double heures = ((double)(SystemClock.elapsedRealtime() - chronometer.getBase())) / (1000*60*60);
+                    double heures = ((double) (SystemClock.elapsedRealtime() -
+                            chronometer.getBase())) / (1000 * 60 * 60);
                     double result = (Float.parseFloat(salaire.getText().toString()) * heures);
-                    resultat.setText("Vous avez gagné " + result + " €");
-//                    resultat.setText("Vous avez gagné " + heures + " €");
+                    resultat.setText(getString(R.string.youWin) + result + getString(R.string.euro));
                 }
             }
         });
@@ -63,5 +63,5 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+
 }

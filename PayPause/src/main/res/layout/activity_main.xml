@@ -14,17 +14,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/salaire"
             android:inputType="numberDecimal"
-            android:hint="Salaire"/>
+            android:hint="@string/salaire"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/startChrono"
-            android:text="Start" />
+            android:text="@string/startChrono" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/stopChrono"
-            android:text="Stop" />
+            android:text="@string/stopChrono" />
     </LinearLayout>
 
     <Chronometer
