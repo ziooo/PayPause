@@ -1,4 +1,4 @@
-package com.ziooo.paypause;
+package com.ziooo.paypause.activity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.ziooo.paypause.R;
+import com.ziooo.paypause.utils.Utils;
 
 public class MainActivity extends Activity {
 
@@ -33,22 +36,27 @@ public class MainActivity extends Activity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                chronometer.setBase(SystemClock.elapsedRealtime());
-                chronometer.start();
+
+                if (!"".equals(salaire.getText().toString())) {
+                    chronometer.setBase(SystemClock.elapsedRealtime());
+                    chronometer.start();
+
+                }
             }
         });
 
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                chronometer.stop();
                 // Calcul par heure
-                if (!"".equals(salaire.getText())) {
+                if (chronometer.isActivated() && !"".equals(salaire.getText().toString())) {
+                    chronometer.stop();
 
+                    String stringSalaire = getStringSalaire();
                     double heures = ((double) (SystemClock.elapsedRealtime() -
                             chronometer.getBase())) / (1000 * 60 * 60);
-                    double result = (Float.parseFloat(salaire.getText().toString()) * heures);
-                    resultat.setText(getString(R.string.youWin) + result + getString(R.string.euro));
+                    double result = (Float.parseFloat(stringSalaire) * heures);
+                    resultat.setText(Utils.concatString(getString(R.string.youWin), result, getString(R.string.euro)));
                 }
             }
         });
@@ -56,12 +64,20 @@ public class MainActivity extends Activity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    //Utils
+
+    private String getStringSalaire() {
+        String stringSalaire = salaire.getText().toString();
+        if (".".equals(stringSalaire))
+            stringSalaire = "0.";
+        return stringSalaire;
     }
 
 }

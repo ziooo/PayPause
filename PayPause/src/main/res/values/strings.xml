@@ -7,7 +7,7 @@
 
 
     <!-- Main activity -->
-    <string name="youWin">Vous avez gagné</string>
+    <string name="youWin">Vous avez gagné : </string>
     <string name="euro">€</string>
     <string name="salaire">Salaire</string>
     <string name="startChrono">Start</string>
