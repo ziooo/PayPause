@@ -10,7 +10,8 @@
     <string name="youWin">Vous avez gagné : </string>
     <string name="euro">€</string>
     <string name="salaire">Salaire</string>
-    <string name="startChrono">Start</string>
-    <string name="stopChrono">Stop</string>
+    <string name="startChronometer">Start</string>
+    <string name="stopChronometer">Stop</string>
+    <string name="initChronometer">00:00.000</string>
 
 </resources>

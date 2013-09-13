@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ziooo.paypause.R;
 import com.ziooo.paypause.utils.Utils;
@@ -37,19 +38,23 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
+
                 if (!"".equals(salaire.getText().toString())) {
                     chronometer.setBase(SystemClock.elapsedRealtime());
                     chronometer.start();
-
                 }
             }
-        });
+        }
 
-        stop.setOnClickListener(new View.OnClickListener() {
+        );
+
+        stop.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View view) {
                 // Calcul par heure
-                if (chronometer.isActivated() && !"".equals(salaire.getText().toString())) {
+                if (!"".equals(salaire.getText().toString())) {
                     chronometer.stop();
 
                     String stringSalaire = getStringSalaire();
@@ -59,7 +64,9 @@ public class MainActivity extends Activity {
                     resultat.setText(Utils.concatString(getString(R.string.youWin), result, getString(R.string.euro)));
                 }
             }
-        });
+        }
+
+        );
 
 
     }
@@ -70,6 +77,7 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
 
     //Utils
 

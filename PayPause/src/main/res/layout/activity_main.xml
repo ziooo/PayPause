@@ -1,42 +1,83 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical">
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/salaire"
-            android:inputType="numberDecimal"
-            android:hint="@string/salaire"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/startChrono"
-            android:text="@string/startChrono" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/stopChrono"
-            android:text="@string/stopChrono" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/salaire"
+                android:inputType="numberDecimal"
+                android:hint="@string/salaire"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_centerVertical="true"
+                >
+
+            <RelativeLayout
+                    android:id="@+id/layoutTextViews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chronometer"
+                    >
+
+                <TextView
+                        android:id="@+id/chronometer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/chronometer_text"
+                        android:layout_centerInParent="true"
+                        android:text="@string/initChronometer"/>
+
+
+                <TextView
+                        android:id="@+id/resultat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@+id/chronometer"
+                        android:textSize="@dimen/win_text"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/initChronometer"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        android:id="@+id/startChronometer"
+                        android:text="@string/startChronometer"/>
+
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        android:id="@+id/stopChronometer"
+                        android:text="@string/stopChronometer"/>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
-    <Chronometer
-        android:id="@+id/chronometer"
-        android:format="%s"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"/>
-
-    <TextView
-        android:id="@+id/resultat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
 </LinearLayout>
